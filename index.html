@@ -415,7 +415,7 @@ function sendOrder() {
   if (note) message += `\nملاحظة: ${note}`;
 
   // عرض تأكيد لتفعيل GPS
-  if (confirm("هل تريد إضافة موقعك الجغرافي للطلب؟")) {
+  if (confirm("يرجى إضافة موقعك الجغرافي للطلب؟")) {
     navigator.geolocation.getCurrentPosition(
       position => {
         const lat = position.coords.latitude;
