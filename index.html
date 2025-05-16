@@ -264,9 +264,6 @@ function displayProducts(page) {
     });
   });
 
-  updateTotalPrice();
-}
-
 function updatePagination() {
   const totalPages = Math.ceil(products.length / productsPerPage);
   const container = document.getElementById("pagination");
